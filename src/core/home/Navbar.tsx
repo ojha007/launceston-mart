@@ -39,15 +39,16 @@ export default function NavBar() {
         <img
           src={require("../../assets/images/logo.png")}
           alt="Launceston Mart Remit"
-          width="15%"
-          className="d-inline-block align-text-top"
+          width="100"
+          height="40"
+          className="d-inline-block align-top"
         />
       </NavbarBrand>
 
       <NavbarToggler onClick={(e) => setToogle(!toogle)} />
 
-      <Collapse navbar isOpen={toogle}>
-        <Nav className="ml-auto" navbar>
+      <Collapse navbar isOpen={toogle} className="justify-content-end">
+        <Nav className="ml-auto " navbar>
           <NavItem>
             <NavBarLink to="">
               <Speedometer2 className="bi me-2" />
@@ -85,8 +86,8 @@ export default function NavBar() {
               aria-current="page"
               onClick={() => TokenService.clearToken()}
             >
-              <span>Logout</span>
               <BoxArrowRight className="bi me-2" />
+              <span>Logout</span>
             </a>
           </NavItem>
         </Nav>
