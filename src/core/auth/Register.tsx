@@ -44,9 +44,12 @@ export default function Register() {
   };
 
   return (
-    <Container fluid className="auth-screen h-100">
-      <Row className="justify-content-center align-items-center h-100">
-        <Col md="3">
+    <Container fluid className="auth-screen" style={{ height: "120vh" }}>
+      <Row
+        className="justify-content-center align-items-center row"
+        style={{ height: "100vh" }}
+      >
+        <Col md="4">
           <AuthHeaderLogo />
           <Card className="background-snow">
             <CardBody>
